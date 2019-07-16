@@ -1,33 +1,48 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    /* background-image: url(images/tic-tac-toe.png); */
+    background-color: #EBF5FB;  
+    padding: 50px;
+    
   }
-  to {
-    transform: rotate(360deg);
+  
+  .BodyText {
+      /* display: flex; */
+      justify-content: center;
+      /* position: absolute; */
+      width: 60%;
+      /* right: 0; */
+      float: left;
+      margin: auto;
+      /* background-image: url(images/tic-tac-toe.png); */
+      /* background-image: url(images/doodles.png); */
+      /* background-image: url(images/congruent_pentagon.png); */
+      /* background-image: url(images/Margo.png); */
+      /* background-color: #EBF5FB;   */
+      /* background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;     */
   }
-}
+  
+  .Example {
+      border-style: solid;
+      border-color: coral;
+  }
+  
+  .CodeBlock {
+      background: #ffffff; 
+      overflow:auto;
+      width:auto;
+      /* border:solid gray; */
+      border: solid #a7cbe2;
+      border-width:.1em .1em .1em .8em;
+      padding:.2em .6em;
+  }
+  
+  .CodeBlock pre {
+      margin: 0;
+      line-height: 125%;
+  }
+  

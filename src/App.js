@@ -5,10 +5,11 @@ import { BodyText, MySolution } from './components/BodyText';
 import TopSolns from './components/TopSolns';
 import Twenty from './components/Twenty';
 // import FindAnswer from './components/FindAnswer';
-import Example from './components/ExampleGame'
+// import Example from './components/ExampleGame'
 
 import styled from 'styled-components';
 import Slider from './components/Slider';
+import FindAnswer from './components/FindAnswer';
 
 
 const Styles = styled.div`
@@ -30,8 +31,10 @@ class App extends Component {
 					<BodyText></BodyText>
                     <MySolution></MySolution>
 					<TopSolns></TopSolns>
-					<Twenty></Twenty>
-				</div>
+                    <Twenty></Twenty>
+                    <FindAnswer></FindAnswer>
+                    <Styles><Slider color="0074D9"></Slider></Styles>
+                </div>
 			</div>
     );
   }

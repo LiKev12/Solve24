@@ -17,13 +17,14 @@ class FindAnswer extends Component {
           d: '',
           permArr: [],
           usedChars: [],
-          retainOrder: false
+          retainOrder: false,
+          printedAnswer: ''
       };
   
       // Bind this to function updateData (This eliminates the error)
       this.updateData = this.updateData.bind(this);
       this.handleSolve = this.handleSolve.bind(this);
-      this.findPermutations = this.findPermutations.bind(this);
+      this.handleToggleOrder = this.handleToggleOrder.bind(this);
     }
 
     // componentDidMount() {
@@ -99,38 +100,52 @@ class FindAnswer extends Component {
                         // console.log("Answer:",arrOneSoln[i]);
                         allSolns.push(arrOneSoln[i]);
                         if (chosen === inputNums) {
-                            originalSoln += arrOneSoln[i];
-                            // console.log("Original Soln:", arrOneSoln[i]);
+                            if (!originalSoln) {
+                                originalSoln += arrOneSoln[i];
+                                // console.log("Original Soln:", arrOneSoln[i]);
+                            }
                         }
                     }
 
                 }
             }
         });   
+        let answerToShow = ''
         if (retainOrder) {
             if (!originalSoln) {
                 console.log('Solution in given order not found');
+                answerToShow = 'Solution in given order not found';
             } else {
                 console.log('Solution in given order found:', originalSoln);
+                answerToShow = 'Solution in given order found: ' +  originalSoln;
             }
         } else {
             let length = allSolns.length;
             if (length !== 0) {
                 if (length === 1) {
                     console.log("1 Solution Exists:", allSolns[0]);
+                    answerToShow = 'Solution in given order found: ' +  allSolns[0];
                 } else {
                     console.log(`${length} solutions found! One such solution:`, allSolns[Math.floor(Math.random() * allSolns.length)]);
+                    answerToShow = `${length} solutions found! One such solution: ` + allSolns[Math.floor(Math.random() * allSolns.length)];
                 }
+            } else {
+                console.log('No solutions exist');
+                answerToShow = 'No solutions exist';
             }
         }
 
         if (!foundMatch) {
             console.log('Could not find match. Each value can be from 1 to 20, separated by a comma.')
+            answerToShow = 'Could not find match. Each value can be from 1 to 20, separated by a comma.';
         }
+        this.setState({
+            printedAnswer: answerToShow
+        })
         // console.log(this.state.a,this.state.b,this.state.c,this.state.d);
     }
 
-    updateData(result) {
+    updateData = (result) => {
       const data = result.data;
       this.setState({data: data});
     }
@@ -146,32 +161,13 @@ class FindAnswer extends Component {
         })
     }
 
-    findPermutations(inputNums) {
-        if (this.state.permArr.length>25) {
-            this.setState({
-                permArr: []
-            })
-        }
-        let permArr = this.state.permArr;
-        let usedChars = this.state.usedChars;
-        var i, ch;
-        if (permArr.length>25) {
-            permArr = [];
-        }
-        for (i = 0; i < inputNums.length; i++) {
-          ch = inputNums.splice(i, 1)[0];
-          usedChars.push(ch);
-          if (inputNums.length === 0) {
-            if (permArr.length<= 25) {
-                permArr.push(usedChars.slice());
-            }
-          }
-          this.findPermutations(inputNums);
-          inputNums.splice(i, 0, ch);
-          usedChars.pop();
-        }
-        return permArr;
-      };
+    handleToggleOrder = () => {
+        this.setState((prevState) => {
+            return {
+                retainOrder : !prevState.retainOrder
+            };
+        })
+    }
 
 
 
@@ -182,24 +178,51 @@ class FindAnswer extends Component {
             <h1>Forms and Inputs</h1>
             <p>Input is: {a},{b},{c},{d}</p>
             <form onSubmit={this.handleSubmit}>
-                <p><input type='text' 
-                placeholder='2'
-                value={a} 
-                name='a' 
-                onChange={this.handleInputChange}/></p>
-                <p><input type='text' 
-                value={b} 
-                name='b' 
-                onChange={this.handleInputChange}/></p>
-                <p><input type='text' 
-                value={c} 
-                name='c' 
-                onChange={this.handleInputChange}/></p>
-                <p><input type='text' 
-                value={d} 
-                name='d' 
-                onChange={this.handleInputChange}/></p>
+                <div className='inputNumbersWrap'>
+                    <input type='text'
+                    className='inputNumbersText' 
+                    placeholder='2'
+                    value={a} 
+                    name='a' 
+                    onChange={this.handleInputChange}/>
+
+                    <input type='text' 
+                    className='inputNumbersText' 
+                    value={b} 
+                    name='b' 
+                    onChange={this.handleInputChange}/>
+                    
+                    <input type='text' 
+                    className='inputNumbersText' 
+                    value={c} 
+                    name='c' 
+                    onChange={this.handleInputChange}/>
+
+                    <input type='text' 
+                    className='inputNumbersText' 
+                    value={d} 
+                    name='d' 
+                    onChange={this.handleInputChange}/>
+                </div>
+
+                <p>Retain order?</p>
+
+
+                <div>
+                    <label 
+                    className="switch"
+                    >
+                        <input type="checkbox" 
+                        onClick = {this.handleToggleOrder}
+                        ></input>
+                        <span className="slider round"></span>
+                    </label>
+                    {this.state.retainOrder ? 'Exact Order' : 'Any Order'}
+                </div>
+
+
                 <p><button onClick={() => this.handleSolve(data)}>Find Answer</button></p>
+                <span>{this.state.printedAnswer}</span>
             </form>
           </div>
       )

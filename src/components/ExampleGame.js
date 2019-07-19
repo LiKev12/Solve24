@@ -18,7 +18,6 @@ class Example extends Component {
     render() {
         return (
             <div className= "Example">
-                <h1>Example</h1>
                 <p><b>Given: </b> ({ this.props.inputNums })</p>
                 <button onClick = {this.handleToggleVisibility}>{this.state.visibility ? 'Hide Answer' : 'Show Answer'}</button>
                 {this.state.visibility && (

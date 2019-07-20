@@ -19,7 +19,12 @@ class Example extends Component {
         return (
             <div className= "Example">
                 <p><b>Given: </b> ({ this.props.inputNums })</p>
-                <button onClick = {this.handleToggleVisibility}>{this.state.visibility ? 'Hide Answer' : 'Show Answer'}</button>
+                <button 
+                onClick = {this.handleToggleVisibility}
+                className = "buttonExample"
+                >
+                {this.state.visibility ? 'Hide Answer' : 'Show Answer'}
+                </button>
                 {this.state.visibility && (
                     <div>
                         <p><b>Answer: </b>{ this.props.answer }</p>
@@ -29,11 +34,5 @@ class Example extends Component {
         )
     };
 }
-
-
-// <h1>
-// Example {this.props.inputNums}
-// </h1>
-// <p>{this.props.answer}</p>
 
 export default Example;

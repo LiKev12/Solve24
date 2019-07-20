@@ -174,9 +174,8 @@ class FindAnswer extends Component {
     render() {
       const {data, a, b, c, d } = this.state;
       return (
-          <div>
-            <h1>Forms and Inputs</h1>
-            <p>Input is: {a},{b},{c},{d}</p>
+          <div className="solverDemo">
+            <h1>24 Solver</h1>
             <form onSubmit={this.handleSubmit}>
                 <div className='inputNumbersWrap'>
                     <input type='text'
@@ -205,23 +204,27 @@ class FindAnswer extends Component {
                     onChange={this.handleInputChange}/>
                 </div>
 
-                <p>Retain order?</p>
+                <h3>Order:</h3>
 
-
-                <div>
-                    <label 
-                    className="switch"
-                    >
-                        <input type="checkbox" 
-                        onClick = {this.handleToggleOrder}
-                        ></input>
-                        <span className="slider round"></span>
+                <div className="onoffswitch">
+                    <input type="checkbox" 
+                    name="onoffswitch" 
+                    className="onoffswitch-checkbox" 
+                    id="myonoffswitch" 
+                    defaultChecked
+                    onClick = {this.handleToggleOrder}
+                    ></input>
+                    <label className="onoffswitch-label" htmlFor="myonoffswitch">
+                        <span className="onoffswitch-inner"></span>
+                        <span className="onoffswitch-switch"></span>
                     </label>
-                    {this.state.retainOrder ? 'Exact Order' : 'Any Order'}
                 </div>
 
-
-                <p><button onClick={() => this.handleSolve(data)}>Find Answer</button></p>
+                <p><button 
+                onClick={() => this.handleSolve(data)}
+                className="buttonPurple">
+                Find Answer
+                </button></p>
                 <span>{this.state.printedAnswer}</span>
             </form>
           </div>
@@ -230,3 +233,18 @@ class FindAnswer extends Component {
   }
   
   export default FindAnswer;
+
+
+
+
+//   <div>
+//   <label 
+//   className="switch"
+//   >
+//       <input type="checkbox" 
+//       onClick = {this.handleToggleOrder}
+//       ></input>
+//       <span className="slider round"></span>
+//   </label>
+//   {this.state.retainOrder ? 'Exact Order' : 'Any Order'}
+// </div>

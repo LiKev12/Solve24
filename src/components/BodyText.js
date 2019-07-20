@@ -140,9 +140,9 @@ if third==24:
 
         <img src={ExampleAlgo} width="500" height="400" alt="Sample" />
 
-        <p>In the figure above, 2 examples are shown. The input numbers with their respective operations are performed 
-        in the order given, and the resulting answer is shown at the bottom. It is important to note that while this algorithm 
-        works for 4 out of the 6 possible orderings, it needed to be slightly tweaked for the other 2 orderings 
+        <p>In the figure above, 2 examples are shown. The <span style={{color: '#a7cbe2'}}><b>input numbers</b></span> with their respective 
+        <span style={{color: '#e2bba7'}}><b> operations</b></span> are resolved in the <span style={{color: '#e2a7b8'}}><b>order</b></span> given, and the resulting answer is shown at the bottom. It is 
+        important to note that while this algorithm works for 4 out of the 6 possible orderings, it needed to be slightly tweaked for the other 2 orderings 
         (<b>1->3->2</b> and <b>3->1->2</b>), as shown in the code above. I also created a helper function to perform each operation. For the dividing by 0 case, I set the 
         result to some obscenely large value, effectively ruling out such a combination to be a candidate answer.</p>
 
@@ -163,7 +163,8 @@ else:
         </CodeBlock>
 
         <p>The rest of the code in the Python script goes through plotting and exporting data into csv files. 
-        If interested, it is available to view on my Github repo, just look for <b>solve24.py</b>!</p>
+        If interested, it is available to view on my Github repo, just look 
+        for <b><a href="https://github.com/LiKev12/Solve24/tree/master/src/scripts/solve24.py">solve24.py</a></b>!</p>
 
         <p>Below is the actual solver, feel free to play around with it, and test yourself!</p>
 

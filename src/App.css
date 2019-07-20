@@ -1,36 +1,22 @@
 .App {
-    /* text-align: center; */
     display: flex;
     justify-content: center;
-    /* background-image: url(images/tic-tac-toe.png); */
     background-color: #EBF5FB;  
     padding: 50px;
-    
-  }
+}
   
-  .BodyText {
-      /* display: flex; */
-      justify-content: center;
-      /* position: absolute; */
-      width: 60%;
-      /* right: 0; */
-      float: left;
-      margin: auto;
-      /* background-image: url(images/tic-tac-toe.png); */
-      /* background-image: url(images/doodles.png); */
-      /* background-image: url(images/congruent_pentagon.png); */
-      /* background-image: url(images/Margo.png); */
-      /* background-color: #EBF5FB;   */
-      /* background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;     */
-  }
+.BodyText {
+    justify-content: center;
+    width: 60%;
+    float: left;
+    margin: auto;
+}
   
-  .Example {
-      border: 4px solid #cbe2a7;
-      /* border-color: #cbe2a7; */
-      padding: 20px;
-  }
+.Example {
+    border: 4px solid #cbe2a7;
+    background-color: #a7cbe2;
+    padding: 12px;
+}
   
   .CodeBlock {
       background: #ffffff; 
@@ -74,8 +60,8 @@
     right: 0;
     bottom: 0;
     background-color: #ccc;
-    /* -webkit-transition: .4s;
-    transition: .4s; */
+    -webkit-transition: .4s;
+    transition: .4s;
     -webkit-transition: .2s;
     transition: .2s;
   }
@@ -88,8 +74,8 @@
     left: 4px;
     bottom: 4px;
     background-color: white;
-    /* -webkit-transition: .4s;
-    transition: .4s; */
+    -webkit-transition: .4s;
+    transition: .4s;
     -webkit-transition: .2s;
     transition: .2s;
   }
@@ -107,15 +93,7 @@
     -ms-transform: translateX(16px);
     transform: translateX(16px);
   }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
+
 
   .inputNumbersText {
     font-family: "Arial Black", Gadget, sans-serif;
@@ -123,13 +101,93 @@
     text-align: center;
     width: 50px;
     height: 50px;
-    /* padding: 12px 20px; */
-    /* margin: 8px 0; */
-    /* margin: 1px; */
     box-sizing: border-box;
     border: 4px solid #a7cbe2;
   }
 
   .inputNumbersWrap {
     display:inline-block;
+  }
+
+
+
+
+.onoffswitch {
+    position: relative;
+    width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ANY";
+    padding-left: 10px;
+    background-color: #cbe2a7; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "EXACT";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+.solverDemo {
+    border: 2px solid black;
+    padding: 20px;
+    width: 100%;
+}
+
+.buttonPurple {
+    /* background-color: #d0a7e2; */
+    background-color: #e2bba7;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  .buttonExample {
+    background-color: #e2bba7;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 18px;
   }

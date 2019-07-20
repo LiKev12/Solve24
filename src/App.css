@@ -3,99 +3,46 @@
     justify-content: center;
     background-color: #EBF5FB;  
     padding: 50px;
+    /* font-size: 32px; */
 }
   
-.BodyText {
+.AllText {
     justify-content: center;
     width: 60%;
     float: left;
     margin: auto;
 }
   
+/* Example games */
 .Example {
     border: 4px solid #cbe2a7;
     background-color: #a7cbe2;
     padding: 12px;
 }
   
-  .CodeBlock {
-      background: #ffffff; 
-      overflow:auto;
-      width:auto;
-      /* border:solid gray; */
-      border: solid #a7cbe2;
-      border-width:.1em .1em .1em .8em;
-      padding:.2em .6em;
-  }
+/* Code blocks */
+.CodeBlock {
+    background: #ffffff; 
+    overflow:auto;
+    width:auto;
+    border: solid #a7cbe2;
+    border-width:.1em .1em .1em .8em;
+    padding:.2em .6em;
+}
   
-  .CodeBlock pre {
-      margin: 0;
-      line-height: 125%;
-  }
+.CodeBlock pre {
+    margin: 0;
+    line-height: 125%;
+}
 
-  img {
+img {
     border: 4px solid #a7cbe2;
     border-radius: 4px;
     padding: 2px;
-  }
+}
 
-  .switch {
-    position: relative;
-    display: inline-block;
-    width: 40px;
-    height: 24px;
-  }
-  
-  .switch input { 
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-    -webkit-transition: .2s;
-    transition: .2s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-    -webkit-transition: .2s;
-    transition: .2s;
-  }
-  
-  input:checked + .slider {
-    background-color: #cbe2a7;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #cbe2a7;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(16px);
-    -ms-transform: translateX(16px);
-    transform: translateX(16px);
-  }
-
-
-  .inputNumbersText {
+/* Demo input */
+.inputNumbersText {
     font-family: "Arial Black", Gadget, sans-serif;
     font: 32px bold;
     text-align: center;
@@ -103,15 +50,13 @@
     height: 50px;
     box-sizing: border-box;
     border: 4px solid #a7cbe2;
-  }
+}
 
-  .inputNumbersWrap {
+.inputNumbersWrap {
     display:inline-block;
-  }
+}
 
-
-
-
+/* Order Toggle */
 .onoffswitch {
     position: relative;
     width: 90px;
@@ -136,7 +81,7 @@
 .onoffswitch-inner:before {
     content: "ANY";
     padding-left: 10px;
-    background-color: #cbe2a7; color: #FFFFFF;
+    background-color: #e2d9a7; color: #FFFFFF;
 }
 .onoffswitch-inner:after {
     content: "EXACT";
@@ -159,14 +104,16 @@
     right: 0px; 
 }
 
+/* Solver demo */
 .solverDemo {
-    border: 2px solid black;
+    border: 2px solid #d0a7e2;
     padding: 20px;
     width: 100%;
+    background-color: #a7e2bd;
 }
 
+/* Buttons */
 .buttonPurple {
-    /* background-color: #d0a7e2; */
     background-color: #e2bba7;
     border: none;
     color: white;
@@ -177,9 +124,9 @@
     margin: 4px 2px;
     cursor: pointer;
     font-size: 24px;
-  }
+}
 
-  .buttonExample {
+.buttonExample {
     background-color: #e2bba7;
     border: none;
     color: white;
@@ -190,4 +137,6 @@
     margin: 4px 2px;
     cursor: pointer;
     font-size: 18px;
-  }
+}
+
+/* Sliders */

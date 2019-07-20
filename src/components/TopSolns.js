@@ -7,7 +7,7 @@ class TopSolns extends Component {
     
   render() {
     return(
-      <div id="mySolution">
+      <div>
         <h1>Top 100 Solutions</h1>
             <Plotly
             data={[

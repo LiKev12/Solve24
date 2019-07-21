@@ -2,30 +2,206 @@
 {
     "data": [
         {
-            "uid": "4a189794-8cf5-4aba-a5f8-a698162e5844",
+            "uid": "860bbfab-0a10-45bf-a5b0-cc115cf3571d",
             "mode": "markers",
             "type": "scatter3d",
-            "xsrc": "LiKevin12:7:6f985d",
+            "xsrc": "LiKevin12:7:7028b3",
             "x": [
+                18.0,
+                17.0,
+                20.0,
+                5.0,
+                9.0,
+                4.0,
+                19.0,
+                13.0,
+                12.0,
+                16.0,
                 14.0,
-                14.0
+                7.0,
+                6.0,
+                10.0,
+                11.0,
+                15.0,
+                8.0,
+                6.0,
+                8.0,
+                2.0,
+                12.0,
+                4.0,
+                3.0,
+                7.0,
+                5.0,
+                16.0,
+                20.0,
+                14.0,
+                15.0,
+                13.0,
+                17.0,
+                11.0,
+                4.0,
+                9.0,
+                12.0,
+                19.0,
+                8.0,
+                10.0,
+                6.0,
+                18.0,
+                6.0,
+                2.0,
+                4.0,
+                12.0,
+                3.0,
+                8.0
             ],
-            "ysrc": "LiKevin12:7:750e5b",
+            "ysrc": "LiKevin12:7:66b755",
             "y": [
+                6.0,
+                7.0,
+                4.0,
+                19.0,
+                15.0,
+                20.0,
+                5.0,
+                11.0,
+                12.0,
+                8.0,
                 10.0,
+                17.0,
+                18.0,
+                14.0,
+                13.0,
+                9.0,
+                16.0,
+                4.0,
+                3.0,
+                12.0,
+                2.0,
+                6.0,
+                8.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
                 1.0
             ],
-            "zsrc": "LiKevin12:7:0f1660",
+            "zsrc": "LiKevin12:7:5f2dc6",
             "z": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                17.0,
+                19.0,
+                8.0,
+                4.0,
                 10.0,
-                1.0
+                9.0,
+                11.0,
+                7.0,
+                13.0,
+                20.0,
+                15.0,
+                12.0,
+                5.0,
+                16.0,
+                14.0,
+                18.0,
+                6.0,
+                4.0,
+                12.0,
+                6.0,
+                2.0,
+                8.0,
+                3.0
             ],
             "marker": {
                 "opacity": 0.4,
-                "sizesrc": "LiKevin12:7:b3ed3c",
+                "sizesrc": "LiKevin12:7:29c38c",
                 "size": [
+                    52.5,
+                    49.5,
+                    49.5,
+                    49.5,
+                    49.5,
+                    49.5,
+                    49.5,
+                    49.5,
+                    49.5,
+                    49.5,
+                    49.5,
+                    49.5,
+                    49.5,
+                    49.5,
+                    49.5,
+                    49.5,
+                    49.5,
+                    46.5,
+                    46.5,
+                    46.5,
+                    46.5,
+                    46.5,
+                    46.5,
                     45.0,
-                    40.5
+                    45.0,
+                    45.0,
+                    45.0,
+                    45.0,
+                    45.0,
+                    45.0,
+                    45.0,
+                    45.0,
+                    45.0,
+                    45.0,
+                    45.0,
+                    45.0,
+                    45.0,
+                    45.0,
+                    45.0,
+                    45.0,
+                    39.0,
+                    39.0,
+                    39.0,
+                    39.0,
+                    39.0,
+                    39.0
                 ],
                 "colorbar": {
                     "title": {
@@ -33,10 +209,54 @@
                     },
                     "thickness": 20
                 },
-                "colorsrc": "LiKevin12:7:1da4c3",
+                "colorsrc": "LiKevin12:7:c9a1da",
                 "color": [
+                    35.0,
+                    33.0,
+                    33.0,
+                    33.0,
+                    33.0,
+                    33.0,
+                    33.0,
+                    33.0,
+                    33.0,
+                    33.0,
+                    33.0,
+                    33.0,
+                    33.0,
+                    33.0,
+                    33.0,
+                    33.0,
+                    33.0,
+                    31.0,
+                    31.0,
+                    31.0,
+                    31.0,
+                    31.0,
+                    31.0,
                     30.0,
-                    27.0
+                    30.0,
+                    30.0,
+                    30.0,
+                    30.0,
+                    30.0,
+                    30.0,
+                    30.0,
+                    30.0,
+                    30.0,
+                    30.0,
+                    30.0,
+                    30.0,
+                    30.0,
+                    30.0,
+                    30.0,
+                    30.0,
+                    26.0,
+                    26.0,
+                    26.0,
+                    26.0,
+                    26.0,
+                    26.0
                 ],
                 "colorscale": [
                     [
@@ -1087,7 +1307,7 @@
             }
         },
         "title": {
-            "text": "Top 100 Inputs with the Most Solutions (d = 10)"
+            "text": "Top 100 Inputs with the Most Solutions (d = <b>1</b>)"
         },
         "width": 1000,
         "height": 600,
@@ -1100,30 +1320,34 @@
 {
     "data": [
         {
-            "uid": "4a189794-8cf5-4aba-a5f8-a698162e5844",
+            "uid": "3a40fa1d-0adf-4faf-8d80-26186aabe669",
             "mode": "markers",
             "type": "scatter3d",
-            "xsrc": "LiKevin12:7:6f985d",
+            "xsrc": "LiKevin12:7:ed7720",
             "x": [
-                14.0,
-                14.0
+                12.0,
+                12.0,
+                2.0
             ],
-            "ysrc": "LiKevin12:7:750e5b",
+            "ysrc": "LiKevin12:7:96a46d",
             "y": [
-                10.0,
-                1.0
+                2.0,
+                1.0,
+                2.0
             ],
-            "zsrc": "LiKevin12:7:0f1660",
+            "zsrc": "LiKevin12:7:2477c7",
             "z": [
-                10.0,
-                1.0
+                2.0,
+                1.0,
+                12.0
             ],
             "marker": {
                 "opacity": 0.4,
-                "sizesrc": "LiKevin12:7:b3ed3c",
+                "sizesrc": "LiKevin12:7:dd07cd",
                 "size": [
-                    45.0,
-                    40.5
+                    54.0,
+                    43.5,
+                    39.0
                 ],
                 "colorbar": {
                     "title": {
@@ -1131,10 +1355,11 @@
                     },
                     "thickness": 20
                 },
-                "colorsrc": "LiKevin12:7:1da4c3",
+                "colorsrc": "LiKevin12:7:59e1c8",
                 "color": [
-                    30.0,
-                    27.0
+                    36.0,
+                    29.0,
+                    26.0
                 ],
                 "colorscale": [
                     [
@@ -2185,7 +2410,7 @@
             }
         },
         "title": {
-            "text": "Top 100 Inputs with the Most Solutions (d = 10)"
+            "text": "Top 100 Inputs with the Most Solutions (d = <b>2</b>)"
         },
         "width": 1000,
         "height": 600,
@@ -2198,30 +2423,30 @@
 {
     "data": [
         {
-            "uid": "4a189794-8cf5-4aba-a5f8-a698162e5844",
+            "uid": "608d0ac0-5c96-45aa-aea8-c51a5dce0fb7",
             "mode": "markers",
             "type": "scatter3d",
-            "xsrc": "LiKevin12:7:6f985d",
+            "xsrc": "LiKevin12:7:e2230d",
             "x": [
-                14.0,
-                14.0
+                8.0,
+                8.0
             ],
-            "ysrc": "LiKevin12:7:750e5b",
+            "ysrc": "LiKevin12:7:ea040c",
             "y": [
-                10.0,
+                3.0,
                 1.0
             ],
-            "zsrc": "LiKevin12:7:0f1660",
+            "zsrc": "LiKevin12:7:fc9553",
             "z": [
-                10.0,
+                3.0,
                 1.0
             ],
             "marker": {
                 "opacity": 0.4,
-                "sizesrc": "LiKevin12:7:b3ed3c",
+                "sizesrc": "LiKevin12:7:5a7a9c",
                 "size": [
                     45.0,
-                    40.5
+                    42.0
                 ],
                 "colorbar": {
                     "title": {
@@ -2229,10 +2454,10 @@
                     },
                     "thickness": 20
                 },
-                "colorsrc": "LiKevin12:7:1da4c3",
+                "colorsrc": "LiKevin12:7:206525",
                 "color": [
                     30.0,
-                    27.0
+                    28.0
                 ],
                 "colorscale": [
                     [
@@ -3283,7 +3508,7 @@
             }
         },
         "title": {
-            "text": "Top 100 Inputs with the Most Solutions (d = 10)"
+            "text": "Top 100 Inputs with the Most Solutions (d = <b>3</b>)"
         },
         "width": 1000,
         "height": 600,
@@ -3296,29 +3521,37 @@
 {
     "data": [
         {
-            "uid": "4a189794-8cf5-4aba-a5f8-a698162e5844",
+            "uid": "396f526a-f863-477f-82ca-e526c8a57935",
             "mode": "markers",
             "type": "scatter3d",
-            "xsrc": "LiKevin12:7:6f985d",
+            "xsrc": "LiKevin12:7:7da70a",
             "x": [
-                14.0,
-                14.0
+                6.0,
+                20.0,
+                6.0,
+                20.0
             ],
-            "ysrc": "LiKevin12:7:750e5b",
+            "ysrc": "LiKevin12:7:1ac6fe",
             "y": [
-                10.0,
+                4.0,
+                4.0,
+                1.0,
                 1.0
             ],
-            "zsrc": "LiKevin12:7:0f1660",
+            "zsrc": "LiKevin12:7:49b67b",
             "z": [
-                10.0,
+                4.0,
+                4.0,
+                1.0,
                 1.0
             ],
             "marker": {
                 "opacity": 0.4,
-                "sizesrc": "LiKevin12:7:b3ed3c",
+                "sizesrc": "LiKevin12:7:815592",
                 "size": [
                     45.0,
+                    45.0,
+                    42.0,
                     40.5
                 ],
                 "colorbar": {
@@ -3327,9 +3560,11 @@
                     },
                     "thickness": 20
                 },
-                "colorsrc": "LiKevin12:7:1da4c3",
+                "colorsrc": "LiKevin12:7:4fe009",
                 "color": [
                     30.0,
+                    30.0,
+                    28.0,
                     27.0
                 ],
                 "colorscale": [
@@ -4381,7 +4616,7 @@
             }
         },
         "title": {
-            "text": "Top 100 Inputs with the Most Solutions (d = 10)"
+            "text": "Top 100 Inputs with the Most Solutions (d = <b>4</b>)"
         },
         "width": 1000,
         "height": 600,
@@ -4394,27 +4629,27 @@
 {
     "data": [
         {
-            "uid": "4a189794-8cf5-4aba-a5f8-a698162e5844",
+            "uid": "b7b7cdde-5a03-45d0-a67a-85b61d9f602c",
             "mode": "markers",
             "type": "scatter3d",
-            "xsrc": "LiKevin12:7:6f985d",
+            "xsrc": "LiKevin12:7:b1c346",
             "x": [
-                14.0,
-                14.0
+                19.0,
+                19.0
             ],
-            "ysrc": "LiKevin12:7:750e5b",
+            "ysrc": "LiKevin12:7:b41765",
             "y": [
-                10.0,
+                5.0,
                 1.0
             ],
-            "zsrc": "LiKevin12:7:0f1660",
+            "zsrc": "LiKevin12:7:4584fd",
             "z": [
-                10.0,
+                5.0,
                 1.0
             ],
             "marker": {
                 "opacity": 0.4,
-                "sizesrc": "LiKevin12:7:b3ed3c",
+                "sizesrc": "LiKevin12:7:44280b",
                 "size": [
                     45.0,
                     40.5
@@ -4425,7 +4660,7 @@
                     },
                     "thickness": 20
                 },
-                "colorsrc": "LiKevin12:7:1da4c3",
+                "colorsrc": "LiKevin12:7:257d3c",
                 "color": [
                     30.0,
                     27.0
@@ -5479,7 +5714,7 @@
             }
         },
         "title": {
-            "text": "Top 100 Inputs with the Most Solutions (d = 10)"
+            "text": "Top 100 Inputs with the Most Solutions (d = <b>5</b>)"
         },
         "width": 1000,
         "height": 600,
@@ -5492,29 +5727,45 @@
 {
     "data": [
         {
-            "uid": "4a189794-8cf5-4aba-a5f8-a698162e5844",
+            "uid": "b7492851-1b8f-48cf-a06d-574a62c9e165",
             "mode": "markers",
             "type": "scatter3d",
-            "xsrc": "LiKevin12:7:6f985d",
+            "xsrc": "LiKevin12:7:c5e71c",
             "x": [
-                14.0,
-                14.0
+                18.0,
+                4.0,
+                4.0,
+                6.0,
+                18.0,
+                6.0
             ],
-            "ysrc": "LiKevin12:7:750e5b",
+            "ysrc": "LiKevin12:7:3e5f37",
             "y": [
-                10.0,
-                1.0
+                6.0,
+                6.0,
+                1.0,
+                18.0,
+                1.0,
+                4.0
             ],
-            "zsrc": "LiKevin12:7:0f1660",
+            "zsrc": "LiKevin12:7:1577f0",
             "z": [
-                10.0,
-                1.0
+                6.0,
+                6.0,
+                1.0,
+                6.0,
+                1.0,
+                6.0
             ],
             "marker": {
                 "opacity": 0.4,
-                "sizesrc": "LiKevin12:7:b3ed3c",
+                "sizesrc": "LiKevin12:7:d2f453",
                 "size": [
+                    46.5,
                     45.0,
+                    42.0,
+                    42.0,
+                    40.5,
                     40.5
                 ],
                 "colorbar": {
@@ -5523,9 +5774,13 @@
                     },
                     "thickness": 20
                 },
-                "colorsrc": "LiKevin12:7:1da4c3",
+                "colorsrc": "LiKevin12:7:3041cf",
                 "color": [
+                    31.0,
                     30.0,
+                    28.0,
+                    28.0,
+                    27.0,
                     27.0
                 ],
                 "colorscale": [
@@ -6577,7 +6832,7 @@
             }
         },
         "title": {
-            "text": "Top 100 Inputs with the Most Solutions (d = 10)"
+            "text": "Top 100 Inputs with the Most Solutions (d = <b>6</b>)"
         },
         "width": 1000,
         "height": 600,
@@ -6590,30 +6845,38 @@
 {
     "data": [
         {
-            "uid": "4a189794-8cf5-4aba-a5f8-a698162e5844",
+            "uid": "336bb7ca-0be5-4227-81b7-83743512b3e5",
             "mode": "markers",
             "type": "scatter3d",
-            "xsrc": "LiKevin12:7:6f985d",
+            "xsrc": "LiKevin12:7:b02e7f",
             "x": [
-                14.0,
-                14.0
+                17.0,
+                17.0,
+                12.0,
+                6.0
             ],
-            "ysrc": "LiKevin12:7:750e5b",
+            "ysrc": "LiKevin12:7:97c2bb",
             "y": [
-                10.0,
-                1.0
+                7.0,
+                1.0,
+                2.0,
+                4.0
             ],
-            "zsrc": "LiKevin12:7:0f1660",
+            "zsrc": "LiKevin12:7:691457",
             "z": [
-                10.0,
-                1.0
+                7.0,
+                1.0,
+                7.0,
+                7.0
             ],
             "marker": {
                 "opacity": 0.4,
-                "sizesrc": "LiKevin12:7:b3ed3c",
+                "sizesrc": "LiKevin12:7:6a58be",
                 "size": [
                     45.0,
-                    40.5
+                    40.5,
+                    39.0,
+                    39.0
                 ],
                 "colorbar": {
                     "title": {
@@ -6621,10 +6884,12 @@
                     },
                     "thickness": 20
                 },
-                "colorsrc": "LiKevin12:7:1da4c3",
+                "colorsrc": "LiKevin12:7:22771b",
                 "color": [
                     30.0,
-                    27.0
+                    27.0,
+                    26.0,
+                    26.0
                 ],
                 "colorscale": [
                     [
@@ -7675,7 +7940,7 @@
             }
         },
         "title": {
-            "text": "Top 100 Inputs with the Most Solutions (d = 10)"
+            "text": "Top 100 Inputs with the Most Solutions (d = <b>7</b>)"
         },
         "width": 1000,
         "height": 600,
@@ -7688,30 +7953,38 @@
 {
     "data": [
         {
-            "uid": "4a189794-8cf5-4aba-a5f8-a698162e5844",
+            "uid": "ac4d576e-79f3-4f9f-90d0-765b0386b09b",
             "mode": "markers",
             "type": "scatter3d",
-            "xsrc": "LiKevin12:7:6f985d",
+            "xsrc": "LiKevin12:7:f35894",
             "x": [
-                14.0,
-                14.0
+                16.0,
+                3.0,
+                16.0,
+                3.0
             ],
-            "ysrc": "LiKevin12:7:750e5b",
+            "ysrc": "LiKevin12:7:ecd328",
             "y": [
-                10.0,
+                8.0,
+                8.0,
+                1.0,
                 1.0
             ],
-            "zsrc": "LiKevin12:7:0f1660",
+            "zsrc": "LiKevin12:7:1a16ac",
             "z": [
-                10.0,
+                8.0,
+                8.0,
+                1.0,
                 1.0
             ],
             "marker": {
                 "opacity": 0.4,
-                "sizesrc": "LiKevin12:7:b3ed3c",
+                "sizesrc": "LiKevin12:7:5129a1",
                 "size": [
                     45.0,
-                    40.5
+                    45.0,
+                    42.0,
+                    42.0
                 ],
                 "colorbar": {
                     "title": {
@@ -7719,10 +7992,12 @@
                     },
                     "thickness": 20
                 },
-                "colorsrc": "LiKevin12:7:1da4c3",
+                "colorsrc": "LiKevin12:7:0878b4",
                 "color": [
                     30.0,
-                    27.0
+                    30.0,
+                    28.0,
+                    28.0
                 ],
                 "colorscale": [
                     [
@@ -8773,7 +9048,7 @@
             }
         },
         "title": {
-            "text": "Top 100 Inputs with the Most Solutions (d = 10)"
+            "text": "Top 100 Inputs with the Most Solutions (d = <b>8</b>)"
         },
         "width": 1000,
         "height": 600,
@@ -8786,27 +9061,27 @@
 {
     "data": [
         {
-            "uid": "4a189794-8cf5-4aba-a5f8-a698162e5844",
+            "uid": "d47c1b4c-3e6b-4a7d-b6be-0fbc27df31e1",
             "mode": "markers",
             "type": "scatter3d",
-            "xsrc": "LiKevin12:7:6f985d",
+            "xsrc": "LiKevin12:7:15232c",
             "x": [
-                14.0,
-                14.0
+                15.0,
+                15.0
             ],
-            "ysrc": "LiKevin12:7:750e5b",
+            "ysrc": "LiKevin12:7:545f34",
             "y": [
-                10.0,
+                9.0,
                 1.0
             ],
-            "zsrc": "LiKevin12:7:0f1660",
+            "zsrc": "LiKevin12:7:117b54",
             "z": [
-                10.0,
+                9.0,
                 1.0
             ],
             "marker": {
                 "opacity": 0.4,
-                "sizesrc": "LiKevin12:7:b3ed3c",
+                "sizesrc": "LiKevin12:7:f96b33",
                 "size": [
                     45.0,
                     40.5
@@ -8817,7 +9092,7 @@
                     },
                     "thickness": 20
                 },
-                "colorsrc": "LiKevin12:7:1da4c3",
+                "colorsrc": "LiKevin12:7:eaec2a",
                 "color": [
                     30.0,
                     27.0
@@ -9871,7 +10146,7 @@
             }
         },
         "title": {
-            "text": "Top 100 Inputs with the Most Solutions (d = 10)"
+            "text": "Top 100 Inputs with the Most Solutions (d = <b>9</b>)"
         },
         "width": 1000,
         "height": 600,
@@ -9884,27 +10159,27 @@
 {
     "data": [
         {
-            "uid": "4a189794-8cf5-4aba-a5f8-a698162e5844",
+            "uid": "6db6767d-9611-4c4e-9b9e-2dae334fbd41",
             "mode": "markers",
             "type": "scatter3d",
-            "xsrc": "LiKevin12:7:6f985d",
+            "xsrc": "LiKevin12:7:c746d8",
             "x": [
                 14.0,
                 14.0
             ],
-            "ysrc": "LiKevin12:7:750e5b",
+            "ysrc": "LiKevin12:7:9b5d42",
             "y": [
                 10.0,
                 1.0
             ],
-            "zsrc": "LiKevin12:7:0f1660",
+            "zsrc": "LiKevin12:7:1ba9a3",
             "z": [
                 10.0,
                 1.0
             ],
             "marker": {
                 "opacity": 0.4,
-                "sizesrc": "LiKevin12:7:b3ed3c",
+                "sizesrc": "LiKevin12:7:84c8c8",
                 "size": [
                     45.0,
                     40.5
@@ -9915,7 +10190,7 @@
                     },
                     "thickness": 20
                 },
-                "colorsrc": "LiKevin12:7:1da4c3",
+                "colorsrc": "LiKevin12:7:1de3a0",
                 "color": [
                     30.0,
                     27.0
@@ -10969,7 +11244,7 @@
             }
         },
         "title": {
-            "text": "Top 100 Inputs with the Most Solutions (d = 10)"
+            "text": "Top 100 Inputs with the Most Solutions (d = <b>10</b>)"
         },
         "width": 1000,
         "height": 600,
@@ -10982,27 +11257,27 @@
 {
     "data": [
         {
-            "uid": "806c8dbc-c154-4f07-8653-2f410a83eec0",
+            "uid": "19b79fb6-6061-49a0-969e-be6e78a51ef1",
             "mode": "markers",
             "type": "scatter3d",
-            "xsrc": "LiKevin12:7:0f5171",
+            "xsrc": "LiKevin12:7:0e0020",
             "x": [
-                4.0,
-                4.0
+                13.0,
+                13.0
             ],
-            "ysrc": "LiKevin12:7:f8cf31",
+            "ysrc": "LiKevin12:7:2e8b81",
             "y": [
-                20.0,
+                11.0,
                 1.0
             ],
-            "zsrc": "LiKevin12:7:4eb9a8",
+            "zsrc": "LiKevin12:7:20fc4f",
             "z": [
-                20.0,
+                11.0,
                 1.0
             ],
             "marker": {
                 "opacity": 0.4,
-                "sizesrc": "LiKevin12:7:99e5ab",
+                "sizesrc": "LiKevin12:7:f950d9",
                 "size": [
                     45.0,
                     40.5
@@ -11013,7 +11288,7 @@
                     },
                     "thickness": 20
                 },
-                "colorsrc": "LiKevin12:7:dc1023",
+                "colorsrc": "LiKevin12:7:ff2670",
                 "color": [
                     30.0,
                     27.0
@@ -12067,7 +12342,7 @@
             }
         },
         "title": {
-            "text": "Top 100 Inputs with the Most Solutions (d = 20)"
+            "text": "Top 100 Inputs with the Most Solutions (d = <b>11</b>)"
         },
         "width": 1000,
         "height": 600,
@@ -12080,29 +12355,37 @@
 {
     "data": [
         {
-            "uid": "806c8dbc-c154-4f07-8653-2f410a83eec0",
+            "uid": "389f8c63-f9d0-4c50-b4dc-d06cfac26fdb",
             "mode": "markers",
             "type": "scatter3d",
-            "xsrc": "LiKevin12:7:0f5171",
+            "xsrc": "LiKevin12:7:3a5956",
             "x": [
-                4.0,
-                4.0
+                12.0,
+                2.0,
+                2.0,
+                12.0
             ],
-            "ysrc": "LiKevin12:7:f8cf31",
+            "ysrc": "LiKevin12:7:41e344",
             "y": [
-                20.0,
+                12.0,
+                12.0,
+                1.0,
                 1.0
             ],
-            "zsrc": "LiKevin12:7:4eb9a8",
+            "zsrc": "LiKevin12:7:8f79ae",
             "z": [
-                20.0,
+                12.0,
+                12.0,
+                1.0,
                 1.0
             ],
             "marker": {
                 "opacity": 0.4,
-                "sizesrc": "LiKevin12:7:99e5ab",
+                "sizesrc": "LiKevin12:7:dbe187",
                 "size": [
+                    55.5,
                     45.0,
+                    42.0,
                     40.5
                 ],
                 "colorbar": {
@@ -12111,9 +12394,11 @@
                     },
                     "thickness": 20
                 },
-                "colorsrc": "LiKevin12:7:dc1023",
+                "colorsrc": "LiKevin12:7:b81839",
                 "color": [
+                    37.0,
                     30.0,
+                    28.0,
                     27.0
                 ],
                 "colorscale": [
@@ -13165,7 +13450,7 @@
             }
         },
         "title": {
-            "text": "Top 100 Inputs with the Most Solutions (d = 20)"
+            "text": "Top 100 Inputs with the Most Solutions (d = <b>12</b>)"
         },
         "width": 1000,
         "height": 600,
@@ -13178,27 +13463,27 @@
 {
     "data": [
         {
-            "uid": "806c8dbc-c154-4f07-8653-2f410a83eec0",
+            "uid": "048b18ac-1bee-4993-bf3b-0fa75eec81f3",
             "mode": "markers",
             "type": "scatter3d",
-            "xsrc": "LiKevin12:7:0f5171",
+            "xsrc": "LiKevin12:7:2b682c",
             "x": [
-                4.0,
-                4.0
+                11.0,
+                11.0
             ],
-            "ysrc": "LiKevin12:7:f8cf31",
+            "ysrc": "LiKevin12:7:39ca0b",
             "y": [
-                20.0,
+                13.0,
                 1.0
             ],
-            "zsrc": "LiKevin12:7:4eb9a8",
+            "zsrc": "LiKevin12:7:ad6f10",
             "z": [
-                20.0,
+                13.0,
                 1.0
             ],
             "marker": {
                 "opacity": 0.4,
-                "sizesrc": "LiKevin12:7:99e5ab",
+                "sizesrc": "LiKevin12:7:f9c69e",
                 "size": [
                     45.0,
                     40.5
@@ -13209,7 +13494,7 @@
                     },
                     "thickness": 20
                 },
-                "colorsrc": "LiKevin12:7:dc1023",
+                "colorsrc": "LiKevin12:7:b6f2f5",
                 "color": [
                     30.0,
                     27.0
@@ -14263,7 +14548,7 @@
             }
         },
         "title": {
-            "text": "Top 100 Inputs with the Most Solutions (d = 20)"
+            "text": "Top 100 Inputs with the Most Solutions (d = <b>13</b>)"
         },
         "width": 1000,
         "height": 600,
@@ -14276,27 +14561,27 @@
 {
     "data": [
         {
-            "uid": "806c8dbc-c154-4f07-8653-2f410a83eec0",
+            "uid": "011a28e2-f20a-4eec-a4f4-785860fc24cd",
             "mode": "markers",
             "type": "scatter3d",
-            "xsrc": "LiKevin12:7:0f5171",
+            "xsrc": "LiKevin12:7:b8d01a",
             "x": [
-                4.0,
-                4.0
+                10.0,
+                10.0
             ],
-            "ysrc": "LiKevin12:7:f8cf31",
+            "ysrc": "LiKevin12:7:8f4a3a",
             "y": [
-                20.0,
+                14.0,
                 1.0
             ],
-            "zsrc": "LiKevin12:7:4eb9a8",
+            "zsrc": "LiKevin12:7:e79e93",
             "z": [
-                20.0,
+                14.0,
                 1.0
             ],
             "marker": {
                 "opacity": 0.4,
-                "sizesrc": "LiKevin12:7:99e5ab",
+                "sizesrc": "LiKevin12:7:c92e66",
                 "size": [
                     45.0,
                     40.5
@@ -14307,7 +14592,7 @@
                     },
                     "thickness": 20
                 },
-                "colorsrc": "LiKevin12:7:dc1023",
+                "colorsrc": "LiKevin12:7:7fb8c6",
                 "color": [
                     30.0,
                     27.0
@@ -15361,7 +15646,7 @@
             }
         },
         "title": {
-            "text": "Top 100 Inputs with the Most Solutions (d = 20)"
+            "text": "Top 100 Inputs with the Most Solutions (d = <b>14</b>)"
         },
         "width": 1000,
         "height": 600,
@@ -15374,27 +15659,27 @@
 {
     "data": [
         {
-            "uid": "806c8dbc-c154-4f07-8653-2f410a83eec0",
+            "uid": "5468fc4a-a5d2-4aad-bc2b-7a23ff034750",
             "mode": "markers",
             "type": "scatter3d",
-            "xsrc": "LiKevin12:7:0f5171",
+            "xsrc": "LiKevin12:7:071b6a",
             "x": [
-                4.0,
-                4.0
+                9.0,
+                9.0
             ],
-            "ysrc": "LiKevin12:7:f8cf31",
+            "ysrc": "LiKevin12:7:22b166",
             "y": [
-                20.0,
+                15.0,
                 1.0
             ],
-            "zsrc": "LiKevin12:7:4eb9a8",
+            "zsrc": "LiKevin12:7:d82e3e",
             "z": [
-                20.0,
+                15.0,
                 1.0
             ],
             "marker": {
                 "opacity": 0.4,
-                "sizesrc": "LiKevin12:7:99e5ab",
+                "sizesrc": "LiKevin12:7:c7d492",
                 "size": [
                     45.0,
                     40.5
@@ -15405,7 +15690,7 @@
                     },
                     "thickness": 20
                 },
-                "colorsrc": "LiKevin12:7:dc1023",
+                "colorsrc": "LiKevin12:7:bd45f3",
                 "color": [
                     30.0,
                     27.0
@@ -16459,7 +16744,7 @@
             }
         },
         "title": {
-            "text": "Top 100 Inputs with the Most Solutions (d = 20)"
+            "text": "Top 100 Inputs with the Most Solutions (d = <b>15</b>)"
         },
         "width": 1000,
         "height": 600,
@@ -16472,27 +16757,27 @@
 {
     "data": [
         {
-            "uid": "806c8dbc-c154-4f07-8653-2f410a83eec0",
+            "uid": "b5695c25-adc1-47c0-9001-043d30361a5a",
             "mode": "markers",
             "type": "scatter3d",
-            "xsrc": "LiKevin12:7:0f5171",
+            "xsrc": "LiKevin12:7:6366c6",
             "x": [
-                4.0,
-                4.0
+                8.0,
+                8.0
             ],
-            "ysrc": "LiKevin12:7:f8cf31",
+            "ysrc": "LiKevin12:7:e824ff",
             "y": [
-                20.0,
+                16.0,
                 1.0
             ],
-            "zsrc": "LiKevin12:7:4eb9a8",
+            "zsrc": "LiKevin12:7:5190b9",
             "z": [
-                20.0,
+                16.0,
                 1.0
             ],
             "marker": {
                 "opacity": 0.4,
-                "sizesrc": "LiKevin12:7:99e5ab",
+                "sizesrc": "LiKevin12:7:53c777",
                 "size": [
                     45.0,
                     40.5
@@ -16503,7 +16788,7 @@
                     },
                     "thickness": 20
                 },
-                "colorsrc": "LiKevin12:7:dc1023",
+                "colorsrc": "LiKevin12:7:8e9fde",
                 "color": [
                     30.0,
                     27.0
@@ -17557,7 +17842,7 @@
             }
         },
         "title": {
-            "text": "Top 100 Inputs with the Most Solutions (d = 20)"
+            "text": "Top 100 Inputs with the Most Solutions (d = <b>16</b>)"
         },
         "width": 1000,
         "height": 600,
@@ -17570,30 +17855,34 @@
 {
     "data": [
         {
-            "uid": "806c8dbc-c154-4f07-8653-2f410a83eec0",
+            "uid": "c481aeac-3713-4122-9266-e17b7d409ba9",
             "mode": "markers",
             "type": "scatter3d",
-            "xsrc": "LiKevin12:7:0f5171",
+            "xsrc": "LiKevin12:7:9a68d4",
             "x": [
-                4.0,
-                4.0
+                7.0,
+                7.0,
+                2.0
             ],
-            "ysrc": "LiKevin12:7:f8cf31",
+            "ysrc": "LiKevin12:7:3f1609",
             "y": [
-                20.0,
-                1.0
+                17.0,
+                1.0,
+                12.0
             ],
-            "zsrc": "LiKevin12:7:4eb9a8",
+            "zsrc": "LiKevin12:7:f212d1",
             "z": [
-                20.0,
-                1.0
+                17.0,
+                1.0,
+                17.0
             ],
             "marker": {
                 "opacity": 0.4,
-                "sizesrc": "LiKevin12:7:99e5ab",
+                "sizesrc": "LiKevin12:7:94c52e",
                 "size": [
                     45.0,
-                    40.5
+                    40.5,
+                    39.0
                 ],
                 "colorbar": {
                     "title": {
@@ -17601,10 +17890,11 @@
                     },
                     "thickness": 20
                 },
-                "colorsrc": "LiKevin12:7:dc1023",
+                "colorsrc": "LiKevin12:7:feeb05",
                 "color": [
                     30.0,
-                    27.0
+                    27.0,
+                    26.0
                 ],
                 "colorscale": [
                     [
@@ -18655,7 +18945,7 @@
             }
         },
         "title": {
-            "text": "Top 100 Inputs with the Most Solutions (d = 20)"
+            "text": "Top 100 Inputs with the Most Solutions (d = <b>17</b>)"
         },
         "width": 1000,
         "height": 600,
@@ -18668,29 +18958,33 @@
 {
     "data": [
         {
-            "uid": "806c8dbc-c154-4f07-8653-2f410a83eec0",
+            "uid": "633e40ce-4804-49e8-9ff4-2b14ceece2c3",
             "mode": "markers",
             "type": "scatter3d",
-            "xsrc": "LiKevin12:7:0f5171",
+            "xsrc": "LiKevin12:7:65f385",
             "x": [
-                4.0,
-                4.0
+                6.0,
+                6.0,
+                6.0
             ],
-            "ysrc": "LiKevin12:7:f8cf31",
+            "ysrc": "LiKevin12:7:2c9297",
             "y": [
-                20.0,
-                1.0
+                18.0,
+                1.0,
+                6.0
             ],
-            "zsrc": "LiKevin12:7:4eb9a8",
+            "zsrc": "LiKevin12:7:a9b61a",
             "z": [
-                20.0,
-                1.0
+                18.0,
+                1.0,
+                6.0
             ],
             "marker": {
                 "opacity": 0.4,
-                "sizesrc": "LiKevin12:7:99e5ab",
+                "sizesrc": "LiKevin12:7:16b147",
                 "size": [
                     45.0,
+                    40.5,
                     40.5
                 ],
                 "colorbar": {
@@ -18699,9 +18993,10 @@
                     },
                     "thickness": 20
                 },
-                "colorsrc": "LiKevin12:7:dc1023",
+                "colorsrc": "LiKevin12:7:62fcbd",
                 "color": [
                     30.0,
+                    27.0,
                     27.0
                 ],
                 "colorscale": [
@@ -19753,7 +20048,7 @@
             }
         },
         "title": {
-            "text": "Top 100 Inputs with the Most Solutions (d = 20)"
+            "text": "Top 100 Inputs with the Most Solutions (d = <b>18</b>)"
         },
         "width": 1000,
         "height": 600,
@@ -19766,27 +20061,27 @@
 {
     "data": [
         {
-            "uid": "806c8dbc-c154-4f07-8653-2f410a83eec0",
+            "uid": "ae69fa4c-05a2-415b-93fe-d125d404fc17",
             "mode": "markers",
             "type": "scatter3d",
-            "xsrc": "LiKevin12:7:0f5171",
+            "xsrc": "LiKevin12:7:079ae4",
             "x": [
-                4.0,
-                4.0
+                5.0,
+                5.0
             ],
-            "ysrc": "LiKevin12:7:f8cf31",
+            "ysrc": "LiKevin12:7:5e34ab",
             "y": [
-                20.0,
+                19.0,
                 1.0
             ],
-            "zsrc": "LiKevin12:7:4eb9a8",
+            "zsrc": "LiKevin12:7:c4a717",
             "z": [
-                20.0,
+                19.0,
                 1.0
             ],
             "marker": {
                 "opacity": 0.4,
-                "sizesrc": "LiKevin12:7:99e5ab",
+                "sizesrc": "LiKevin12:7:89758a",
                 "size": [
                     45.0,
                     40.5
@@ -19797,7 +20092,7 @@
                     },
                     "thickness": 20
                 },
-                "colorsrc": "LiKevin12:7:dc1023",
+                "colorsrc": "LiKevin12:7:6cf351",
                 "color": [
                     30.0,
                     27.0
@@ -20851,7 +21146,7 @@
             }
         },
         "title": {
-            "text": "Top 100 Inputs with the Most Solutions (d = 20)"
+            "text": "Top 100 Inputs with the Most Solutions (d = <b>19</b>)"
         },
         "width": 1000,
         "height": 600,
@@ -20864,27 +21159,27 @@
 {
     "data": [
         {
-            "uid": "806c8dbc-c154-4f07-8653-2f410a83eec0",
+            "uid": "5f70a7af-3d50-4b20-a10e-ad2be5a36d25",
             "mode": "markers",
             "type": "scatter3d",
-            "xsrc": "LiKevin12:7:0f5171",
+            "xsrc": "LiKevin12:7:8fce92",
             "x": [
                 4.0,
                 4.0
             ],
-            "ysrc": "LiKevin12:7:f8cf31",
+            "ysrc": "LiKevin12:7:c6dee8",
             "y": [
                 20.0,
                 1.0
             ],
-            "zsrc": "LiKevin12:7:4eb9a8",
+            "zsrc": "LiKevin12:7:dec0cc",
             "z": [
                 20.0,
                 1.0
             ],
             "marker": {
                 "opacity": 0.4,
-                "sizesrc": "LiKevin12:7:99e5ab",
+                "sizesrc": "LiKevin12:7:f1fab2",
                 "size": [
                     45.0,
                     40.5
@@ -20895,7 +21190,7 @@
                     },
                     "thickness": 20
                 },
-                "colorsrc": "LiKevin12:7:dc1023",
+                "colorsrc": "LiKevin12:7:4b2045",
                 "color": [
                     30.0,
                     27.0
@@ -21949,7 +22244,7 @@
             }
         },
         "title": {
-            "text": "Top 100 Inputs with the Most Solutions (d = 20)"
+            "text": "Top 100 Inputs with the Most Solutions (d = <b>20</b>)"
         },
         "width": 1000,
         "height": 600,

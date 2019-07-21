@@ -29,7 +29,7 @@ class FindAnswer extends Component {
 
     componentWillMount() {
       // Start parse
-      var csvFilePath = require("../data/testcsv.csv");
+      var csvFilePath = require("../data/allData.csv");
       Papa.parse(csvFilePath, {
         header: true,
         download: true,
@@ -176,7 +176,6 @@ class FindAnswer extends Component {
                 <div className='inputNumbersWrap'>
                     <input type='text'
                     className='inputNumbersText' 
-                    placeholder='2'
                     value={a} 
                     name='a' 
                     onChange={this.handleInputChange}/>

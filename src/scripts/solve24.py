@@ -1,26 +1,17 @@
 from mpl_toolkits.mplot3d import Axes3D
+import matplotlib
 import matplotlib.pyplot as plt
+from matplotlib import cm
 import numpy as np
 import csv
-import pandas as pd
-import pyperclip
 import sys
-import json
 
 import plotly
-# plotly.tools.set_credentials_file(username='LiKevin12', api_key='kiVsTvzqaindbLbzGHmc')
 import plotly.plotly as py
 import plotly.graph_objs as go
 
 from itertools import permutations
 from itertools import product
-
-import matplotlib
-from matplotlib import cm
-import numpy as np
-
-
-argNum = int(str(sys.argv[1]))
 
 def initializeSolve(nums):
   nums = [float(i) for i in nums]
@@ -79,7 +70,6 @@ def solveGame(nums,ops,orders):
         third = helperEvaluate(numList[orderList[2]-1], opList[orderList[2]-1], numList[orderList[2]])
 
         if third==24:
-        #   print(orderListCopy, type(orderListCopy))
           if (orderListCopy == [1,2,3]):
             ansText = '(((' + str(int(numListCopy[0])) + ' ' + str(opListCopy[0]) + ' ' + str(int(numListCopy[1])) + ') ' + str(opListCopy[1]) + ' ' + str(int(numListCopy[2])) + ') ' + str(opListCopy[2]) + ' ' + str(int(numListCopy[3])) + ')' 
           elif (orderListCopy == [1,3,2]):
@@ -93,13 +83,12 @@ def solveGame(nums,ops,orders):
           else:
             ansText = '(' + str(int(numListCopy[0])) + ' ' + str(opListCopy[0]) + ' (' + str(int(numListCopy[1])) + ' ' + str(opListCopy[1]) + ' (' + str(int(numListCopy[2])) + ' ' + str(opListCopy[2]) + ' ' + str(int(numListCopy[3])) + ')))'
 
-        #   print(ansText)
           record[tuple(numListCopy)] += 1
           if (ansList[tuple(numListCopy)] == ' '):
             ansList[tuple(numListCopy)] = ansText
         
 
-
+# populates record of final answers
 def getAnswer(limit):
   allNums = [0]*limit
   for i in range(limit):
@@ -119,7 +108,7 @@ def getAnswer(limit):
   for i in record:
     record[i] = float(record[i]/24)
 
-# Transfers answer into list format
+# Transforms answer into list format
 def getData1(limit):
   x1, x2, x3, x4 = ([0]*(limit+1) for i in range(4))
   getAnswer(limit)
@@ -131,8 +120,6 @@ def getData1(limit):
 
 # Gets PyPlot Graph
 def getPyPlot(a,b,c,d,n):
-      # https://stackoverflow.com/questions/41215272/z-axis-scaling-and-limits-in-a-3-d-scatter-plot-in-matplotlib
-  # https://matplotlib.org/3.1.0/api/_as_gen/mpl_toolkits.mplot3d.axes3d.Axes3D.html (more help for axis labels)
   fig = plt.figure()
   ax = Axes3D(fig)
 
@@ -160,6 +147,7 @@ def matplotlib_to_plotly(cmap, pl_entries):
 
 # Gets Plotly plot
 def getPlotly(a,b,c,d,n,limit,cutoff,sect):
+  # converts preset colorscale from matplotlib
   fromMPL_cmap = matplotlib.cm.get_cmap('Spectral_r')
 
   fromMPL_rgb = []
@@ -169,7 +157,6 @@ def getPlotly(a,b,c,d,n,limit,cutoff,sect):
     k = matplotlib.colors.colorConverter.to_rgb(fromMPL_cmap(norm(i)))
     fromMPL_rgb.append(k)
   fromMPL = matplotlib_to_plotly(fromMPL_cmap, 255)
-#   fromMPL = list(map(int,fromMPL))
   trace1 = go.Scatter3d(
     x=a,
     y=b,
@@ -178,7 +165,7 @@ def getPlotly(a,b,c,d,n,limit,cutoff,sect):
     marker=dict(
         size=n*1.5,
         color=n,                # set color to an array/list of desired values
-        colorscale=fromMPL,   # choose a colorscale
+        colorscale=fromMPL,     # choose a colorscale
         opacity=0.4,
         colorbar = dict(
           thickness=20,
@@ -186,9 +173,10 @@ def getPlotly(a,b,c,d,n,limit,cutoff,sect):
     )
   )
   data = [trace1]
+
   titleText = 'Viewing 24Solver with Range = ' + '<b>' + str(limit) + '</b>' + ', Cutoff = ' + '<b>' + str(cutoff) + '</b>' + ' and d = ' + '<b>' + str(sect) + '</b>'
-#   titleText = 'Viewing 24Solve with Range = ' + '<b>' + str(limit) + '</b>' + ' and d = ' + '<b>' + str(sect) + '</b>'
 #   titleText = 'Top 100 Inputs with the Most Solutions'
+
   layout = go.Layout(
     font=dict(
       family='Courier New, monospace',
@@ -208,18 +196,12 @@ def getPlotly(a,b,c,d,n,limit,cutoff,sect):
     width=1000,
     height=600,
   )
-#   layout = go.Layout(
-#     legend=dict(
-#     orientation="h")
-#   )
   fig = go.Figure(data=data, layout=layout)
   fig = dict(data= data, layout=layout)
-#   plotly.offline.plot(fig, filename='name.html')
+
   py.plot(fig, filename='3d-scatter-color')
-#   strJson = json.dumps(fig)
-  divGraph = plotly.offline.plot(data, include_plotlyjs=False, output_type='div')
-#   print(plotly.offline.plot(data, include_plotlyjs=False, output_type='div'))
-  pyperclip.copy(divGraph)
+
+#   divGraph = plotly.offline.plot(data, include_plotlyjs=False, output_type='div')
 
 # gets the CSV file 
 def getCSV(a,b,c,d,n,nameFile):
@@ -243,12 +225,6 @@ def getChart(limit,cutoff,sect):
     c3.append(key[2])
     c4.append(key[3])
     z.append(value)
-
-  # output raw before introducing fixes
-  with open('others.csv', 'w', newline='') as csvfile:
-    writer = csv.writer(csvfile, delimiter=',', quoting=csv.QUOTE_NONNUMERIC)
-    for i in range(len(c1)):
-      writer.writerow([c1[i], c2[i], c3[i], c4[i], z[i]])
 
 #   removes combinations with minimal solutions
   arrToRemove = [];
@@ -282,16 +258,15 @@ def getChart(limit,cutoff,sect):
   nameFile = str(limit) + str(cutoff) + str(sect) + '.csv'
 
 #   getCSV(a,b,c,d,n,nameFile)
-  getPlotly(a,b,c,d,n, limit, cutoff, sect)
 #   getPyPlot(a,b,c,d,n)
+  getPlotly(a,b,c,d,n, limit, cutoff, sect)
+
 
 
 ansList = {}
 record = {}
-# d1, d2, d3, d4, f = ([] for i in range(5))
-getChart(3,0,2)
 
-
+# gets all solutions 
 def solveMax(limit, cutoff, sect):
   c1, c2, c3, c4, z = ([] for i in range(5))
   with open('all20.csv') as file:
@@ -305,7 +280,7 @@ def solveMax(limit, cutoff, sect):
       c4.append(row[3])
       z.append(row[4])
 
-  #   removes combinations with minimal solutions
+  # removes combinations with minimal solutions
   arrToRemove = [];
   for i in range(len(z)):
     if z[i] < cutoff:    
@@ -318,7 +293,7 @@ def solveMax(limit, cutoff, sect):
     c4.pop(i)
     z.pop(i)
 
-# defines cross section (dictates which value for c4)
+  # defines cross section (dictates which value for c4)
   lenAdjust = len(c4)-1;
   for index,val in enumerate(c4[::-1]):
     if val != sect:
@@ -367,14 +342,6 @@ def getTop100(limit, cutoff, sect):
     topc4.append(c4[zinv[i]])
     topz.append(z[zinv[i]])
 
-  # output raw before introducing fixes
-  with open('testTop100raw.csv', 'w', newline='') as csvfile:
-    writer = csv.writer(csvfile, delimiter=',', quoting=csv.QUOTE_NONNUMERIC)
-    for i in range(len(topc1)):
-      writer.writerow([topc1[i], topc2[i], topc3[i], topc4[i], topz[i]])
-
-  
-  
   # defines cross section (dictates which value for c4)
   lenAdjust = len(topc4)-1;
   for index,val in enumerate(topc4[::-1]):
@@ -395,21 +362,14 @@ def getTop100(limit, cutoff, sect):
 
 
   
+
+# Calls to plot (ANY INPUT ABOVE 6 WILL BE SLOW)
+
+getChart(4,2,2)
+# solveMax(20, 10, 4)
+# getTop100(20, 0, 4)
+
+# argNum = int(str(sys.argv[1]))
+# getChart(4,2,argNum)
 # solveMax(20, 10, argNum)
-
 # getTop100(20, 0, argNum)
-
-# pyperclip.copy("hi there this is text")
-  
-
-# for key, value in ansList.items(): 
-#     print(key, ":", value) 
-
-  # output raw before introducing fixes
-for key, value in ansList.items(): 
-  print(key," : ", value)
-
-with open('solverPlayground.csv', 'w', newline='') as csvfile:
-  writer = csv.writer(csvfile, delimiter=',', quotechar = '"', quoting = csv.QUOTE_ALL)
-  for key, value in ansList.items(): 
-    writer.writerow([list(key), int(record.get(key)), value])

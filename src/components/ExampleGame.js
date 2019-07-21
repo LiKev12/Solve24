@@ -27,6 +27,7 @@ class Example extends Component {
                 </button>
                 {this.state.visibility && (
                     <div>
+                        <br></br>
                         <p><b>Answer: </b>{ this.props.answer }</p>
                     </div>
                 )}

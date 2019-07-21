@@ -13,7 +13,8 @@ class MySolution extends Component {
   
         <p>I created a program that takes in 4 numbers and tells you whether they can be arranged 
         to form a valid solution to the game of 24. If a valid solution exists, the program also outputs 
-        the valid solution, along with the total number of possible solutions for the given input.</p>
+        the valid solution, along with the total number of possible solutions for the given input. Considering time 
+        and practicality, I made the input range 1 through 20.</p>
         
         <p>A walkthrough of my code is given below:</p>
         
@@ -70,10 +71,10 @@ if third==24:
         <br></br>
 
 
-        <p>In the figure above, 2 examples are shown. The <span style={{color: '#a7cbe2'}}><b>input numbers</b></span> with their respective 
-        <span style={{color: '#e2bba7'}}><b> operations</b></span> are resolved in the <span style={{color: '#e2a7b8'}}><b>order</b></span> given, and the resulting answer is shown at the bottom. It is 
+        <p>In the figure above, 2 examples are shown. The <span style={{color: '#609ec6'}}><b>input numbers</b></span> with their respective 
+        <span style={{color: '#c68360'}}><b> operations</b></span> are resolved in the <span style={{color: '#c6607e'}}><b>order</b></span> given, and the resulting answer is shown at the bottom. It is 
         important to note that while this algorithm works for 4 out of the 6 possible orderings, it needed to be slightly tweaked for the other 2 orderings 
-        (<b>1->3->2</b> and <b>3->1->2</b>), as shown in the code above. I also created a helper function to perform each operation. For the dividing by 0 case, I set the 
+        (<b>1➝3➝2</b> and <b>3➝1➝2</b>), as shown in the code above. I also created a helper function to perform each operation. For the dividing by 0 case, I set the 
         result to some obscenely large value, effectively ruling out such a combination to be a candidate answer.</p>
 
         <CodeBlock codeSnippet = 
@@ -94,7 +95,7 @@ else:
         <br></br>
 
         <p>The rest of the code in the Python script goes through plotting and exporting data into csv files. 
-        If interested, it is available to view on my Github repo, just look 
+        If you are interested, it is available to view on my GitHub repo, just look 
         for <b><a href="https://github.com/LiKev12/Solve24/tree/master/src/scripts/solve24.py">solve24.py</a></b>!</p>
 
         <p>Below is the actual solver, feel free to play around with it, and test yourself!</p>

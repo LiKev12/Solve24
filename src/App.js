@@ -8,7 +8,7 @@ import MyVisualization from './components/MyVisualization';
 import TopSolns from './components/TopSolns';
 import Twenty from './components/Twenty';
 import SliderAll from './components/SliderAll';
-import SliderTop from './components/SliderAll';
+import SliderTop from './components/SliderTop';
 
 class App extends Component {
 	render() {

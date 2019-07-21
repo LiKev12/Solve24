@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+
 import Papa from 'papaparse';
 import Combinatorics from 'js-combinatorics';
-
 
 class FindAnswer extends Component {
 
@@ -9,6 +9,9 @@ class FindAnswer extends Component {
       super(props);
       this.state = {
           data: '',
+          arrCombos: '',
+          arrNumSolns: '',
+          arrOneSoln: '',
           answer: '',
           a: '',
           b: '',
@@ -24,7 +27,6 @@ class FindAnswer extends Component {
       this.handleToggleOrder = this.handleToggleOrder.bind(this);
     }
 
-  
     componentWillMount() {
       // Start parse
       var csvFilePath = require("../data/testcsv.csv");
@@ -32,41 +34,48 @@ class FindAnswer extends Component {
         header: true,
         download: true,
         skipEmptyLines: true,
-        // Here this is also available. So we can call our custom class method
         complete: this.updateData
       });
     }
   
 
-    handleSolve(data) {
+    handleSolve(data, arrCombos, arrNumSolns, arrOneSoln) {
         let inputNums = String(this.state.a) + ',' + String(this.state.b) + ',' + String(this.state.c) + ',' + String(this.state.d);
-        inputNums = inputNums.split(',');
-        for (let i = 0; i < inputNums.length; i++) {
-            inputNums[i] = parseInt(inputNums[i]);
-        }
-        let cmb = Combinatorics.permutation(inputNums);
-        cmb = cmb.toArray()
+        inputNums = inputNums.split(',').map(function(item) {
+            return parseInt(item, 10);
+        });
 
-        let arrCombos = [];
-        let arrNumSolns = [];
-        let arrOneSoln = [];
+        let originalInput = '[' + String(inputNums) + ']';
+        let cmb = Combinatorics.permutation(inputNums).toArray();
+
+        // removes duplicate combinations
+        cmb = Array.from(new Set(cmb.map(JSON.stringify)), JSON.parse);
+
         let foundMatch = false;
         let originalSoln = '';
         let allSolns = [];
         let retainOrder = this.state.retainOrder;
 
-        data.forEach( (dataItem) => {
-            arrCombos.push(dataItem.combo);
-            arrNumSolns.push(dataItem.numSolns);
-            arrOneSoln.push(dataItem.oneSoln);
-        });
+        // tracks total number of solutions
+        let origTotal = 0;
+        let allTotal = 0;
+
         inputNums = '[' + String(inputNums) + ']';
         cmb.forEach((singleArr) => {
             let chosen = '[' + String(singleArr) + ']';
             for (let i = 0; i < data.length; i++) {
                 let userInput = String(arrCombos[i]).replace(/\s/g, '');
                 if (userInput===chosen) {
+                    // at least one solution found
                     foundMatch = true;
+
+                    // only if matches original input
+                    if (chosen === originalInput) {
+                        origTotal = parseInt(arrNumSolns[i]);
+                    }
+
+                    // all combinations included
+                    allTotal += parseInt(arrNumSolns[i]);
 
                     if (arrNumSolns[i] !== '0') {
                         allSolns.push(arrOneSoln[i]);
@@ -83,30 +92,28 @@ class FindAnswer extends Component {
         let answerToShow = ''
         if (retainOrder) {
             if (!originalSoln) {
-                // console.log('Solution in given order not found');
-                answerToShow = 'Solution in given order not found';
+                answerToShow = 'Solution in given order not found :(';
             } else {
-                // console.log('Solution in given order found:', originalSoln);
-                answerToShow = 'Solution in given order found: ' +  originalSoln;
+                answerToShow = `${origTotal} solutions in given order found. One such solution: ${originalSoln}`;
             }
         } else {
             let length = allSolns.length;
             if (length !== 0) {
                 if (length === 1) {
-                    // console.log("1 Solution Exists:", allSolns[0]);
-                    answerToShow = 'Solution in given order found: ' +  allSolns[0];
+                    if (allTotal === 1) {
+                        answerToShow = `Solution (${allTotal}) exists only for one given order: ${allSolns[0]}`
+                    } else {
+                        answerToShow = `Solutions (${allTotal}) exist only for one given order: ${allSolns[0]}`
+                    }
                 } else {
-                    // console.log(`${length} solutions found! One such solution:`, allSolns[Math.floor(Math.random() * allSolns.length)]);
-                    answerToShow = `${length} solutions found! One such solution: ` + allSolns[Math.floor(Math.random() * allSolns.length)];
+                    answerToShow = `${allTotal} solutions found! One such solution: ${allSolns[Math.floor(Math.random() * allSolns.length)]}`;
                 }
             } else {
-                // console.log('No solutions exist');
-                answerToShow = 'No solutions exist';
+                answerToShow = 'No solutions exist :(';
             }
         }
 
         if (!foundMatch) {
-            // console.log('Could not find match. Each value can be from 1 to 20, separated by a comma.')
             answerToShow = 'Could not find match. Each value can be from 1 to 20, separated by a comma.';
         }
         this.setState({
@@ -116,7 +123,24 @@ class FindAnswer extends Component {
 
     updateData = (result) => {
       const data = result.data;
-      this.setState({data: data});
+
+      let arrCombos = [];
+      let arrNumSolns = [];
+      let arrOneSoln = [];
+
+      // populates separate arrays for combinations, number of solutions, and example solutions
+      data.forEach( (dataItem) => {
+        arrCombos.push(dataItem.combo);
+        arrNumSolns.push(dataItem.numSolns);
+        arrOneSoln.push(dataItem.oneSoln);
+      });
+
+      this.setState({
+        data: data,
+        arrCombos: arrCombos,
+        arrNumSolns: arrNumSolns,
+        arrOneSoln: arrOneSoln
+      });
     }
 
     handleSubmit = (e) => {
@@ -131,9 +155,6 @@ class FindAnswer extends Component {
                 [e.target.name]: e.target.value,
             })
         }
-        // this.setState({
-        //     [e.target.name]: e.target.value,
-        // })
     }
 
     handleToggleOrder = () => {
@@ -147,7 +168,7 @@ class FindAnswer extends Component {
 
 
     render() {
-      const {data, a, b, c, d } = this.state;
+      const {data, arrCombos, arrNumSolns, arrOneSoln, a, b, c, d } = this.state;
       return (
           <div className="solverDemo">
             <h1>24 Solver</h1>
@@ -196,11 +217,11 @@ class FindAnswer extends Component {
                 </div>
                 <br></br>
                 <p><button 
-                onClick={() => this.handleSolve(data)}
+                onClick={() => this.handleSolve(data, arrCombos, arrNumSolns, arrOneSoln)}
                 className="buttonPurple">
                 Find Answer
                 </button></p>
-                <span><b>{this.state.printedAnswer}</b></span>
+                <span style={{"fontSize": "18px"}}><b>{this.state.printedAnswer}</b></span>
             </form>
           </div>
       )

@@ -195,6 +195,7 @@ def getPlotly(a,b,c,d,n,limit,cutoff,sect):
         autosize=False,
     width=1000,
     height=600,
+    # paper_bgcolor= "rgba(0,0,0,1)",
   )
   fig = go.Figure(data=data, layout=layout)
   fig = dict(data= data, layout=layout)
@@ -365,8 +366,8 @@ def getTop100(limit, cutoff, sect):
 
 # Calls to plot (ANY INPUT ABOVE 6 WILL BE SLOW)
 
-getChart(4,2,2)
-# solveMax(20, 10, 4)
+# getChart(4,2,2)
+solveMax(20, 13, 1)
 # getTop100(20, 0, 4)
 
 # argNum = int(str(sys.argv[1]))

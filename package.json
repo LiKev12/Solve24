@@ -6,7 +6,7 @@
     "express": "^4.17.1",
     "js-combinatorics": "^0.5.4",
     "lodash": ">=4.17.13",
-    "papaparse": "^5.0.0",
+    "papaparse": "^5.2.0",
     "plotly": "^1.0.6",
     "plotly.js": "^1.48.3",
     "prismjs": "^1.16.0",
